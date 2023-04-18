@@ -1,4 +1,5 @@
 import { NavLink, Link } from 'react-router-dom'
+import { getBitcoinSvg } from '../services/svg.service'
 
 export function AppHeader(props) {
   return (
@@ -15,6 +16,11 @@ export function AppHeader(props) {
           <NavLink to="/user">User</NavLink>
           <NavLink to="/statisticPage">Statistics</NavLink>
         </nav>
+        {/* <span
+            dangerouslySetInnerHTML={{
+              __html: getBitcoinSvg('hamburger'),
+            }}
+          /> */}
       </header>
       <div className="yellow-div flex">
         <span>The BEST place for your digital wallet</span>
