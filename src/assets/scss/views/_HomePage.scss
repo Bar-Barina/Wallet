@@ -1,26 +1,38 @@
 .main-home-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 50px;
-    height: 100%;
-    min-height: 67vh;
-    width: 100%;
-    background-image: url(https://ukwallpaper.co.uk/imgs/products/large/91002-watercolour-dots-yellow-grey-evu-large.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 80px;
- h1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 50px;
+  height: 100%;
+  min-height: 67vh;
+  width: 100%;
+  background-image: url(https://ukwallpaper.co.uk/imgs/products/large/91002-watercolour-dots-yellow-grey-evu-large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px;
+  @include for-mobile-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    min-height: 69vh;
+  }
+  h1 {
     font-size: 50px;
     font-family: PoppinsMedium;
- }
- h3 {
+    @include for-mobile-layout {
+      font-size: 23.5px;
+    }
+  }
+  h3 {
     font-size: 30px;
- }
- a {
-   text-decoration: none;
- }
- button {
+    @include for-mobile-layout {
+      font-size: 22px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
     font-family: PoppinsMedium;
     width: 384px;
     height: 48px;
@@ -39,29 +51,50 @@
     &:hover {
       background-color: rgba(252, 212, 53, 0.774);
     }
- }
- img {
+    @include for-mobile-layout {
+      font-size: 15px;
+      width: 200px;
+      height: 42px;
+    
+    }
+  }
+  img {
     margin-top: 60px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- }
+    @include for-mobile-layout {
+      margin-top: 30px;
+      width: 190px;
+    }
+  }
 }
 
 .ad {
-   display: flex;
-   justify-content: space-around;
-   border-top: 1px solid rgb(237, 237, 237);
-   h2 {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgb(237, 237, 237);
+  @include for-mobile-layout {
+    display: grid;
+    text-align: center;
+  }
+
+  h2 {
     font-size: 45px;
-   }
-   p {
+    @include for-mobile-layout {
+      font-size: 14px;
+    }
+  }
+  p {
     font-size: 19px;
-   }
+    @include for-mobile-layout {
+      font-size: 9px;
+    }
+  }
 }
 
 .trade {
-   align-items: center;
-   gap: 5px;
-   svg {
-   margin-top: 10px;
-   }
+  align-items: center;
+  gap: 5px;
+  svg {
+    margin-top: 10px;
+  }
 }
