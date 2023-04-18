@@ -6,6 +6,19 @@
   align-items: center;
   padding: 25px;
   font-size: 22px;
+  @include for-mobile-layout {
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px 10px;
+    gap: 0;
+    border-radius: 5px;
+  }
+  h3 {
+    @include for-mobile-layout {
+      font-size: 15px;
+      margin: 10px;
+    }
+  }
   input {
     margin: 10px;
     height: 30px;
@@ -15,6 +28,11 @@
     &:focus {
       outline: 2px solid gray;
       border: none;
+    }
+    @include for-mobile-layout {
+      margin: 0;
+      width: 180px;
+      height: 25px;
     }
   }
   button {
@@ -29,6 +47,11 @@
     border: none;
     &:hover {
       background-color: rgba(252, 212, 53, 0.774);
+    }
+    @include for-mobile-layout {
+      margin: 10px 0 0 0;
+      font-size: 13px;
+    
     }
   }
 }
