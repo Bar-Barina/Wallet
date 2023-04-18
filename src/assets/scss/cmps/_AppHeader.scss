@@ -1,0 +1,60 @@
+.app-header {
+  padding: 0 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-family: PoppinsLight;
+  .logo-link {
+    text-decoration: none;
+  }
+  h1 {
+    text-align: center;
+    color: #edb727;
+    font-family: PoppinsMedium;
+    font-size: 27px;
+    cursor: pointer;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .main-nav {
+    a {
+      text-decoration: none;
+      color: #1e2329;
+      font-size: 17px;
+      padding: 10px;
+      &:hover {
+        color: #c99400;
+      }
+      &.active {
+        color: #c99400;
+      }
+    }
+  }
+}
+
+.yellow-div {
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #fef6d8;
+  text-align: center;
+  height: 64px;
+  img {
+    width: 30px;
+    margin-left: 10px;
+    background-color: #fef6d8;
+  }
+  .add {
+    margin: 0px 0px 0px 30px;
+    padding: 4px 8px;
+    background-color: rgb(252, 213, 53);
+    color: rgb(10, 10, 12);
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: PoppinsMedium;
+    &:hover {
+      background-color: rgba(252, 212, 53, 0.774);
+    }
+  }
+}

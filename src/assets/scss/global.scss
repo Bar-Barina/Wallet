@@ -1,0 +1,49 @@
+// Externals
+
+// Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+@import 'setup/typography';
+
+// Basics
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/modals';
+@import 'basics/animations';
+
+// Views
+@import "views/ContactDetails";
+@import "views/ContactEdit";
+@import "views/SignupPage";
+@import "views/HomePage";
+@import "views/StatisticPage";
+@import "views/UserDetails";
+
+// Components
+@import "cmps/ContactPreview";
+@import "cmps/Chart";
+@import "cmps/AppHeader";
+@import "cmps/ContactList";
+@import "cmps/ContactFilter";
+@import "cmps/TransferFund";
+@import "cmps/MovesList";
+
+// .main-app {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+
+
+
+//   main {
+//     flex-grow: 1;
+//     width: 100%;
+//   }
+
+//   > footer {
+//     background-color: #111;
+//     color: white;
+//   }
+// }

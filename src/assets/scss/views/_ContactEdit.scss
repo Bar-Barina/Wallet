@@ -1,0 +1,49 @@
+.contact-edit {
+  background-color: rgb(242, 231, 189);
+  justify-content: space-around;
+  padding: 50px;
+  h1 {
+    font-size: 25px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    input {
+      height: 50px;
+      border: 1px solid rgb(218, 218, 218);
+      border-radius: 5px;
+      padding: 10px;
+      width: 50%;
+      &:focus {
+        outline: 2px solid gray;
+        border: none;
+      }
+    }
+    .edit-btns {
+      margin-top: 10px;
+      button {
+        display: flex;
+        padding: 4px 8px;
+        background-color: rgb(252, 213, 53);
+        color: rgb(10, 10, 12);
+        border-radius: 5px;
+        font-size: 15px;
+        text-decoration: none;
+        font-family: PoppinsMedium;
+        border: none;
+        cursor: pointer;
+      }
+
+      .edit-back {
+        text-decoration: none;
+        color: black;
+        border-radius: 5px;
+        &:hover {
+          background-color: rgb(237, 222, 163);
+        }
+      }
+    }
+  }
+}

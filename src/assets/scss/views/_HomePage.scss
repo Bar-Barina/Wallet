@@ -1,0 +1,67 @@
+.main-home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 50px;
+    height: 100%;
+    min-height: 67vh;
+    width: 100%;
+    background-image: url(https://ukwallpaper.co.uk/imgs/products/large/91002-watercolour-dots-yellow-grey-evu-large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+ h1 {
+    font-size: 50px;
+    font-family: PoppinsMedium;
+ }
+ h3 {
+    font-size: 30px;
+ }
+ a {
+   text-decoration: none;
+ }
+ button {
+    font-family: PoppinsMedium;
+    width: 384px;
+    height: 48px;
+    background-color: #fcd535;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin-top: 10px;
+      margin-right: 7px;
+    }
+    &:hover {
+      background-color: rgba(252, 212, 53, 0.774);
+    }
+ }
+ img {
+    margin-top: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ }
+}
+
+.ad {
+   display: flex;
+   justify-content: space-around;
+   border-top: 1px solid rgb(237, 237, 237);
+   h2 {
+    font-size: 45px;
+   }
+   p {
+    font-size: 19px;
+   }
+}
+
+.trade {
+   align-items: center;
+   gap: 5px;
+   svg {
+   margin-top: 10px;
+   }
+}

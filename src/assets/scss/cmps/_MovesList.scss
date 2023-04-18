@@ -1,0 +1,27 @@
+.move-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(247, 246, 246);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 70px;
+  div  {
+  display: flex;
+  padding: 15px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: space-between;
+  background-color: white;
+  span {
+    font-family: PoppinsMedium;
+    font-size: 18px;
+  }
+  }
+}
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }

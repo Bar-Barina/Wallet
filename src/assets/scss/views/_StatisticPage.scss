@@ -1,0 +1,23 @@
+.routes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+     font-size: 40px;
+  }
+  select {
+    margin: 0px 0px 0px 30px;
+    padding: 4px 8px;
+    background-color: rgb(252, 213, 53);
+    color: rgb(10, 10, 12);
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: PoppinsMedium;
+    border: none;
+    margin: 100px 20px;
+    &:focus {
+     outline: none;
+    }
+  }
+}
