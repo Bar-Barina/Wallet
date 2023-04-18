@@ -17,10 +17,13 @@ export function SignupPage() {
   }
 
   return (
+    <>
     <form onSubmit={onSignup} className="signup">
+    <img src={`https://robohash.org/8?set=set5`} />
       <label htmlFor="name">Please enter your name</label>
       <input onChange={onHandleChange} type="text" name="name" id="name" />
       <button>Sign up</button>
     </form>
+    </>
   )
 }

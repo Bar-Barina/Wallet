@@ -2,6 +2,14 @@
   background-color: rgb(242, 231, 189);
   justify-content: space-around;
   padding: 50px;
+  @include for-mobile-layout {
+    padding: 7px 30px;
+  }
+  img {
+    @include for-mobile-layout {
+      width: 150px;
+    }
+  }
   h1 {
     font-size: 25px;
   }
@@ -10,15 +18,21 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    @include for-mobile-layout {
+      grid-column: 1;
+    }
     input {
       height: 50px;
       border: 1px solid rgb(218, 218, 218);
       border-radius: 5px;
       padding: 10px;
-      width: 50%;
+      width: 40%;
       &:focus {
         outline: 2px solid gray;
         border: none;
+      }
+      @include for-mobile-layout {
+        width: 100%;
       }
     }
     .edit-btns {

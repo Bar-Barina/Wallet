@@ -5,9 +5,13 @@
   justify-content: center;
   gap: 20px;
   background-color: rgb(242, 231, 189);
-  height: 300px;
   font-size: 20px;
-
+  padding: 30px;
+ img {
+  @include for-mobile-layout {
+   width: 150px;
+  }
+ }
   input {
     margin: 10px;
     height: 30px;

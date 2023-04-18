@@ -10,7 +10,7 @@
     gap: 10px;
   }
   h2 {
-    min-width: 320px;
+    min-width: 550px;
     @include for-mobile-layout {
       font-size: 24px;
       display: none;

@@ -1,28 +1,28 @@
 .user {
-    .user-balance {
-        font-size: 25px;
-        align-items: baseline;
-        background-color: #d7effa;
-        h2 {
-            font-size: 25px;
-            font-weight: 200;
-            @include for-mobile-layout {
-                font-size: 15px;
-              }
-        }
-        h3 {
-            font-size: 25px;
-            font-weight: 200;
-            @include for-mobile-layout {
-                font-size: 15px;
-              }
-        }
+  .user-balance {
+    font-size: 25px;
+    align-items: baseline;
+    background-color: #d7effa;
+    h2 {
+      font-size: 25px;
+      font-weight: 200;
+      @include for-mobile-layout {
+        font-size: 15px;
+      }
     }
-    h1 {
-        font-size: 50px;
-        @include for-mobile-layout {
-            font-size: 24px;
-            margin: 15px;
-          }
+    h3 {
+      font-size: 25px;
+      font-weight: 200;
+      @include for-mobile-layout {
+        font-size: 15px;
+      }
     }
+  }
+  h1 {
+    font-size: 50px;
+    @include for-mobile-layout {
+      font-size: 24px;
+      margin: 15px;
+    }
+  }
 }

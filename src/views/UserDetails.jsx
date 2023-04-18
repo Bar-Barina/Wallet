@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { userService } from '../services/user.service'
 import { bitcoinService } from '../services/bitcoin.service'
 import MovesList from '../cmps/MovesList'
+import { getBitcoinSvg } from '../services/svg.service'
 
 export function UserDetails(props) {
   const [user, setUser] = useState(null)
@@ -35,7 +36,7 @@ export function UserDetails(props) {
           <h1>Hello {user.name}! </h1>
           <div className="flex space-around user-balance">
             <h2>Your Current Balance: {user.coins}$ </h2>
-            <h3>BTC Rate: {bitcoinRate}</h3>
+            <h3>Rate: {bitcoinRate}</h3>
           </div>
         </section>
         <hr></hr>
