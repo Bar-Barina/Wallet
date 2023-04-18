@@ -42,7 +42,7 @@ export function ContactEdit(props) {
   return (
     <section className="contact-edit">
       <h1>{contact._id ? 'Edit' : 'Add'} Contact</h1>
-      <img src={`https://robohash.org/${contact._id}?set=set5`} />
+      <img src={`https://robohash.org/14?set=set5`} />
       <form onSubmit={onSaveContact}>
         <label htmlFor="name">Name</label>
         <input
