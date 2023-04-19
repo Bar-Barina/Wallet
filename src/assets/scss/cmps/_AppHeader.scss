@@ -49,6 +49,11 @@
   background-color: #fef6d8;
   text-align: center;
   height: 64px;
+  span {
+    @include for-mobile-layout {
+      min-width: 233.5px;
+    }
+  }
   img {
     width: 30px;
     margin-left: 10px;
@@ -71,6 +76,7 @@
     }
     @include for-mobile-layout {
       font-size: 10px;
+      max-height: 24px;
     }
   }
   @include for-mobile-layout {
