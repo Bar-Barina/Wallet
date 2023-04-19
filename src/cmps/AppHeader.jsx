@@ -1,26 +1,41 @@
 import { NavLink, Link } from 'react-router-dom'
 import { getBitcoinSvg } from '../services/svg.service'
+import { useState } from 'react'
 
 export function AppHeader(props) {
+  const [showNav, setShowNav] = useState(false)
+
+  const toggleNav = () => {
+    console.log('entered')
+    setShowNav(!showNav)
+  }
+
+  const closeNav = () => {
+    if (showNav) {
+      setShowNav(false)
+    }
+  }
+
   return (
     <>
       <header className="app-header flex space-between align-center">
         <NavLink to="/" className={'logo-link'}>
           <h1 className="logo">Mr. BIT©oin</h1>
         </NavLink>
-        <nav className="main-nav flex">
-          <NavLink to="/">
-            Home
-          </NavLink>
-          <NavLink to="/contact">Contacts</NavLink>
-          <NavLink to="/user">User</NavLink>
-          <NavLink to="/statisticPage">Statistics</NavLink>
+        <nav className={showNav ? 'show-nav' : ''}>
+          <NavLink to="/" onClick={closeNav}>Home</NavLink>
+          <NavLink to="/contact" onClick={closeNav}>Contacts</NavLink>
+          <NavLink to="/user" onClick={closeNav}>User</NavLink>
+          <NavLink to="/statisticPage" onClick={closeNav}>Statistics</NavLink>
         </nav>
-        {/* <span
-            dangerouslySetInnerHTML={{
-              __html: getBitcoinSvg('hamburger'),
-            }}
-          /> */}
+
+        <span
+          className="nav-toggle"
+          onClick={toggleNav}
+          dangerouslySetInnerHTML={{
+            __html: getBitcoinSvg('hamburger'),
+          }}
+        />
       </header>
       <div className="yellow-div flex">
         <span>The BEST place for your digital wallet</span>

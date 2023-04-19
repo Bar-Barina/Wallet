@@ -14,16 +14,16 @@
     font-family: PoppinsMedium;
     font-size: 27px;
     cursor: pointer;
-      @include for-mobile-layout {
-    font-size: 20px;
-    min-width: 150px
-  }
+    @include for-mobile-layout {
+      font-size: 20px;
+      min-width: 150px;
+    }
   }
   img {
     width: 50px;
     height: 50px;
   }
-  .main-nav {
+  nav {
     a {
       text-decoration: none;
       color: #1e2329;
@@ -36,7 +36,7 @@
         color: #c99400;
       }
       @include for-mobile-layout {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }
@@ -76,5 +76,50 @@
   @include for-mobile-layout {
     height: 45px;
     font-size: 13px;
+  }
+}
+
+.show-nav {
+  @include for-mobile-layout {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .app-header {
+    position: relative;
+    svg {
+      width: 40px;
+      display: flex;
+      margin-right: 15px;
+    }
+  }
+  nav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 64px;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: 2;
+    padding: 10px;
+    box-shadow: 0 2px 18px 18px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s forwards;
+  }
+  nav.show-nav {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    height: fit-content;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+@media (min-width: 415px) {
+  .nav-toggle {
+    display: none;
   }
 }
