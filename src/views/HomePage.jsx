@@ -9,7 +9,7 @@ export function HomePage(props) {
         <div>
           <h1>
             Buy, trade and hold 350+ <br></br>
-            cryptocurrencies on Mr. BIT©oin
+            cryptocurrencies on Wallet
           </h1>
           <h3 className='flex trade'><span
             dangerouslySetInnerHTML={{

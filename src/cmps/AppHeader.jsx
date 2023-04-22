@@ -20,7 +20,7 @@ export function AppHeader(props) {
     <>
       <header className="app-header flex space-between align-center">
         <NavLink to="/" className={'logo-link'}>
-          <h1 className="logo">Mr. BIT©oin</h1>
+          <h1 className="logo">Wallet</h1>
         </NavLink>
         <nav className={showNav ? 'show-nav' : ''}>
           <NavLink to="/" onClick={closeNav}>Home</NavLink>
